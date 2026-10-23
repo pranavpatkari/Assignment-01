@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TuteDude – a fictional learning platform built to practise semantic HTML.">
+  <title>TuteDude | Learn. Build. Get Hired.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="top" class="site-header">
+    <h1>Welcome to <mark>TuteDude</mark> – <strong>Learn Smarter, Not Harder</strong></h1>
+
+    <p class="tagline">
+      TuteDude is a <em>mentor-led</em> online learning platform where you
+      <strong>pay for the course</strong> and <em>earn your fees back</em>
+      when you finish on time. Real projects, real mentors, <strong>real results</strong>.
+    </p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Course Menu</a></li>
+        <li><a href="#trivia">Trivia</a></li>
+        <li><a href="#extras">Extras</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <figure class="hero">
+      <img src="images/hero.svg" alt="Illustration of a student learning on a laptop with code, charts and a graduation cap around them" width="960" height="400">
+      <figcaption>Learning at your own pace – with a mentor one message away.</figcaption>
+    </figure>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main-content">
+
+    <!-- ---------- About ---------- -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About TuteDude</h2>
+
+      <article>
+        <h3>Who we are</h3>
+        <p>
+          TuteDude is a <strong>fictional</strong> e-learning platform offering courses in
+          <em>web development</em>, <em>data science</em>, <em>UI/UX design</em> and
+          <em>digital marketing</em>. Every course is built around <b>hands-on projects</b>,
+          weekly <i>live doubt-clearing sessions</i>, and a <u>personal mentor</u> who reviews your work.
+        </p>
+        <p>
+          Our signature <dfn title="Complete the course within the deadline and get your fee back">Refund-on-Completion</dfn>
+          model rewards consistency: finish all modules and assignments on time and your course fee
+          is returned. Courses are delivered in <abbr title="Hindi and English">Hinglish</abbr> and English.
+        </p>
+        <p>
+          Key numbers at a glance: <strong>50,000+</strong> learners, <strong>40+</strong> courses,
+          and an average rating of <strong>4.7/5</strong>. <small>(All figures are made up for this assignment.)</small>
+        </p>
+      </article>
+
+      <blockquote cite="https://example.com/reviews/tutedude">
+        <p>“TuteDude didn't just teach me to code – it taught me to finish what I start.
+          Getting my fee back was the cherry on top.”</p>
+        <footer>— <cite>Ananya R., Full-Stack Web Development learner</cite></footer>
+      </blockquote>
+    </section>
+
+    <!-- ---------- Menu (course catalogue) ---------- -->
+    <section id="menu" aria-labelledby="menu-heading">
+      <h2 id="menu-heading">Course Menu</h2>
+      <p>Pick your course like you'd pick from a menu – each one comes with its own
+        <em>“learning nutrition facts”</em> so you know exactly what's inside.</p>
+
+      <div class="table-wrap">
+        <table class="menu-table">
+          <caption>TuteDude Course Menu – 2026 Batch</caption>
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Level</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Price (₹)</th>
+              <th scope="col">Learning Nutrition Facts</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Full-Stack Web Development</th>
+              <td>Beginner → Advanced</td>
+              <td>16 weeks</td>
+              <td>4,999</td>
+              <td>
+                <table class="nested">
+                  <caption>Per course</caption>
+                  <thead>
+                    <tr><th scope="col">Component</th><th scope="col">Amount</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Video lessons</td><td>120 hrs</td></tr>
+                    <tr><td>Projects</td><td>12</td></tr>
+                    <tr><td>Live sessions</td><td>16</td></tr>
+                    <tr><td>Mentor reviews</td><td>Unlimited</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">Data Science with Python</th>
+              <td>Intermediate</td>
+              <td>14 weeks</td>
+              <td>5,499</td>
+              <td>
+                <table class="nested">
+                  <caption>Per course</caption>
+                  <thead>
+                    <tr><th scope="col">Component</th><th scope="col">Amount</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Video lessons</td><td>95 hrs</td></tr>
+                    <tr><td>Datasets</td><td>25</td></tr>
+                    <tr><td>Capstone projects</td><td>3</td></tr>
+                    <tr><td>Live sessions</td><td>14</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">UI/UX Design</th>
+              <td>Beginner</td>
+              <td>10 weeks</td>
+              <td>3,999</td>
+              <td>
+                <table class="nested">
+                  <caption>Per course</caption>
+                  <thead>
+                    <tr><th scope="col">Component</th><th scope="col">Amount</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Video lessons</td><td>60 hrs</td></tr>
+                    <tr><td>Figma case studies</td><td>8</td></tr>
+                    <tr><td>Portfolio pieces</td><td>4</td></tr>
+                    <tr><td>Live sessions</td><td>10</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">Digital Marketing</th>
+              <td>Beginner</td>
+              <td>8 weeks</td>
+              <td>2,999</td>
+              <td>
+                <table class="nested">
+                  <caption>Per course</caption>
+                  <thead>
+                    <tr><th scope="col">Component</th><th scope="col">Amount</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Video lessons</td><td>45 hrs</td></tr>
+                    <tr><td>Live campaigns</td><td>2</td></tr>
+                    <tr><td>Tools covered</td><td>10+</td></tr>
+                    <tr><td>Live sessions</td><td>8</td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                All courses include a certificate, lifetime access and the
+                <strong>Refund-on-Completion</strong> guarantee.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- ---------- Trivia ---------- -->
+    <section id="trivia" aria-labelledby="trivia-heading">
+      <h2 id="trivia-heading">Trivia</h2>
+      <p>Some fun facts while you decide which course to start with.</p>
+
+      <aside class="trivia-box" aria-label="Did you know?">
+        <h3>Did you know?</h3>
+        <ul>
+          <li>The first web page went live in <time datetime="1991-08-06">August 1991</time>.</li>
+          <li>HTML was created by <strong>Tim Berners-Lee</strong> at CERN.</li>
+          <li>The <code>&lt;blink&gt;</code> tag once existed – and is now obsolete.</li>
+          <li>Water boils at 100<sup>°</sup>C, and H<sub>2</sub>O is still the best study drink.</li>
+        </ul>
+
+        <h4>Quick learning tips</h4>
+        <ol>
+          <li>Study in focused 25-minute blocks.</li>
+          <li>Build something after every module.</li>
+          <li>Explain the concept to someone else.</li>
+        </ol>
+
+        <h4>Glossary</h4>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language – the structure of a web page.</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets – the look and layout of a page.</dd>
+          <dt>Semantic HTML</dt>
+          <dd>Using tags that describe their meaning, like <code>&lt;nav&gt;</code> and <code>&lt;article&gt;</code>.</dd>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- ---------- Extras ---------- -->
+    <section id="extras" aria-labelledby="extras-heading">
+      <h2 id="extras-heading">Extras</h2>
+      <p>A taste of our media-rich lessons.</p>
+
+      <div class="media-grid">
+        <figure>
+          <figcaption>Audio: a short sample clip</figcaption>
+          <audio controls preload="metadata">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            Your browser does not support the <code>audio</code> element.
+          </audio>
+        </figure>
+
+        <figure>
+          <figcaption>Video: a sample lesson preview</figcaption>
+          <video controls width="480" preload="metadata">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support the <code>video</code> element.
+          </video>
+        </figure>
+      </div>
+
+      <details>
+        <summary>Why do we use audio and video in lessons?</summary>
+        <p>Mixed media keeps learners engaged and helps explain concepts that are hard to show with text alone.</p>
+      </details>
+    </section>
+
+    <!-- ---------- Feedback Form ---------- -->
+    <section id="feedback" aria-labelledby="feedback-heading">
+      <h2 id="feedback-heading">Feedback</h2>
+      <p>Tell us how we're doing. Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+      <form action="thank-you.html" method="get">
+        <fieldset>
+          <legend>Your details</legend>
+
+          <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        </fieldset>
+
+        <fieldset>
+          <legend>Your feedback</legend>
+
+          <label for="course">Course you took *</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select a course --</option>
+            <option value="web-dev">Full-Stack Web Development</option>
+            <option value="data-science">Data Science with Python</option>
+            <option value="ui-ux">UI/UX Design</option>
+            <option value="marketing">Digital Marketing</option>
+          </select>
+
+          <p class="radio-label" id="rating-label">Overall rating *</p>
+          <div class="radio-group" role="radiogroup" aria-labelledby="rating-label">
+            <label><input type="radio" name="rating" value="5" required> Excellent</label>
+            <label><input type="radio" name="rating" value="4"> Good</label>
+            <label><input type="radio" name="rating" value="3"> Average</label>
+            <label><input type="radio" name="rating" value="2"> Poor</label>
+          </div>
+
+          <label for="message">Comments</label>
+          <textarea id="message" name="message" rows="5" placeholder="What did you like? What can we improve?"></textarea>
+
+          <label class="checkbox"><input type="checkbox" name="newsletter" value="yes"> Send me course updates</label>
+        </fieldset>
+
+        <button type="submit">Submit Feedback</button>
+        <button type="reset" class="secondary">Clear</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="site-footer">
+    <h2>Contact Us</h2>
+    <address>
+      <strong>TuteDude Learning (fictional)</strong><br>
+      42, Learning Lane, Pune, Maharashtra 411048, India<br>
+      Email: <a href="mailto:support@tutedude.example">support@tutedude.example</a><br>
+      Phone: <a href="tel:+919876543210">+91 98765 43210</a>
+    </address>
+
+    <p><a href="#top">Back to top ↑</a></p>
+
+    <p><small>&copy; 2026 TuteDude. All rights reserved. Built by Pranav Patkari for Assignment-01.</small></p>
+  </footer>
+
+</body>
+</html>

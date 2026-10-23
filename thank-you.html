@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | TuteDude</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Thank you for your <mark>feedback</mark>!</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">We received your response</h2>
+      <p id="greeting">Your feedback has been submitted successfully.</p>
+
+      <dl id="summary"></dl>
+
+      <p><a href="index.html">← Back to TuteDude</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><small>&copy; 2026 TuteDude. All rights reserved.</small></p>
+  </footer>
+
+  <script>
+    // Show what was submitted (the form uses GET, so the values are in the URL).
+    const params = new URLSearchParams(window.location.search);
+    const labels = { name: "Name", email: "Email", course: "Course", rating: "Rating (out of 5)", message: "Comments", newsletter: "Course updates" };
+    const summary = document.getElementById("summary");
+
+    if (params.get("name")) {
+      document.getElementById("greeting").textContent =
+        "Thanks, " + params.get("name") + "! Your feedback has been submitted successfully.";
+    }
+
+    for (const [key, label] of Object.entries(labels)) {
+      const value = params.get(key);
+      if (!value) continue;
+      const dt = document.createElement("dt");
+      const dd = document.createElement("dd");
+      dt.textContent = label;
+      dd.textContent = value;   // textContent avoids injecting HTML
+      summary.append(dt, dd);
+    }
+  </script>
+</body>
+</html>

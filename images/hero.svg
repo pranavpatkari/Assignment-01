@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-label="Student learning on a laptop">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0e7ff"/>
+      <stop offset="1" stop-color="#fef3c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="400" fill="url(#sky)"/>
+  <circle cx="820" cy="80" r="46" fill="#fbbf24" opacity=".8"/>
+  <!-- desk -->
+  <rect x="200" y="300" width="560" height="18" rx="6" fill="#92400e"/>
+  <rect x="240" y="318" width="14" height="70" fill="#78350f"/>
+  <rect x="706" y="318" width="14" height="70" fill="#78350f"/>
+  <!-- laptop -->
+  <rect x="380" y="170" width="220" height="130" rx="8" fill="#1f2937"/>
+  <rect x="392" y="182" width="196" height="106" rx="4" fill="#111827"/>
+  <text x="404" y="208" font-family="monospace" font-size="14" fill="#a5b4fc">&lt;html&gt;</text>
+  <text x="418" y="230" font-family="monospace" font-size="14" fill="#34d399">&lt;header&gt;</text>
+  <text x="432" y="252" font-family="monospace" font-size="14" fill="#fbbf24">Hello!</text>
+  <text x="418" y="274" font-family="monospace" font-size="14" fill="#34d399">&lt;/header&gt;</text>
+  <rect x="350" y="296" width="280" height="8" rx="4" fill="#4b5563"/>
+  <!-- student -->
+  <circle cx="300" cy="190" r="34" fill="#f2c9a0"/>
+  <path d="M266 182 q34 -40 68 0 q-10 -30 -34 -30 q-24 0 -34 30z" fill="#1f2937"/>
+  <rect x="262" y="226" width="76" height="74" rx="18" fill="#4f46e5"/>
+  <!-- graduation cap -->
+  <polygon points="300,140 250,158 300,176 350,158" fill="#111827"/>
+  <line x1="340" y1="160" x2="340" y2="185" stroke="#f59e0b" stroke-width="3"/>
+  <!-- floating icons -->
+  <g fill="#4f46e5" opacity=".85">
+    <rect x="660" y="140" width="20" height="50"/>
+    <rect x="688" y="120" width="20" height="70"/>
+    <rect x="716" y="100" width="20" height="90"/>
+  </g>
+  <text x="120" y="110" font-family="sans-serif" font-size="40" font-weight="700" fill="#3730a3">{ }</text>
+  <text x="150" y="250" font-family="sans-serif" font-size="30" fill="#f59e0b">★</text>
+  <text x="790" y="250" font-family="sans-serif" font-size="30" fill="#f59e0b">★</text>
+</svg>
